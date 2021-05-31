@@ -1,0 +1,43 @@
+print("\nGood Morning!!\n")
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter Second number: "))
+op = int(input("Select operation: (1:ADD 2:SUB 3:MUL 4:DIV) : "))
+
+
+def add(x, y):
+    fres = int(x + y)
+    return fres
+
+
+def subt(x, y):
+    fres = x - y
+    return fres
+
+
+def mult(x, y):
+    fres = x * y
+    return fres
+
+
+def divi(x, y):
+    fres = x / y
+    return fres
+
+try:
+        if op == 1:
+            res = add(num1, num2)
+            print("\nSum of {} and {} is {}".format(num1, num2, res))
+        elif op == 2:
+            res = subt(num1, num2)
+            print("\nSub of {} and {} is {}".format(num1, num2, res))
+        elif op == 3:
+            res = mult(num1, num2)
+            print("\nMul of {} and {} is {}".format(num1, num2, res))
+        elif op == 4:
+            res = divi(num1, num2)
+            print("\nDiv of {} and {} is {}".format(num1, num2, res))
+        else:
+            print("\nINVALID OPTION SELECTED")
+except Exception:
+        print("\nINVALID OPTION SELECTED")
